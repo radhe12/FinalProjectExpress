@@ -1,0 +1,74 @@
+<% include ../partials/header.ejs %>
+
+    <!-- MAIN CONTENT -->
+    <div class="jumbotron"  >
+   <!--   <div class="row">
+        <div class="container-fluid bg-1 text-center">
+          <h1><%= title %></h1>
+            <form class="form" method="post">
+              <div class="form-group">
+                <label for="NameTextField">Name</label>
+                <input type="text" class="form-control" id="NameTextField"
+                placeholder="Tournament Name" name="name" value="<%= tournaments.name %>" required>
+              </div>
+              <div class="form-group">
+                <label for="descriptionTextField">Description</label>
+                <input type="text" class="form-control" id="descriptionTextField"
+                placeholder="Tournament description" name="description" value="<%= tournaments.description %>"  required>
+              </div>
+                <div class="form-group">
+                <label for="completedTextField">Completed</label>
+                <input type="text" class="form-control" id="completedTextField"
+                placeholder="Tournament completed or not" name="completed" value="<%= tournaments.completed %>"  required>
+              </div>
+            
+
+              <button type="submit" class="btn btn-primary"><i class="fa fa-check-square-o"></i> Submit</button>
+              <a href="/tournaments" class="btn btn-warning"><i class="fa fa-undo"></i> Cancel</a>
+            </form>
+        </div>
+      </div> -->
+      
+      	<div class="row" style="left-margin:50">
+        <div class="col-sm-12">
+            <h1 style="color:white;margin:0 auto;"><%= title %></h1>
+        </div>
+        <!-- panel preview -->
+        <div class="col-sm-5">
+            
+            <form class="form" method="post">
+            <div class="panel panel-default">
+                <div class="panel-body form-horizontal payment-form" >
+                    <div class="form-group">
+                        <label for="concept" class="col-sm-3 control-label">Name</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="NameTextField" name="name" value="<%= tournaments.name %>" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="description" class="col-sm-3 control-label">Description</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="descriptionTextField" name="description" value="<%= tournaments.description %>"  required>
+                        </div>
+                    </div> 
+                    
+                                     <div class="form-group">
+                        <label for="description" class="col-sm-3 control-label">Completed</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="completedTextField" name="completed" value="<%= tournaments.completed %>"  required>
+                        </div>
+                    </div> 
+                    <div class="form-group">
+                        <div class="col-sm-12 text-right">
+                <button type="submit" class="btn btn-primary"><i class="fa fa-check-square-o"></i> Submit</button>
+              <a href="/tournaments" class="btn btn-warning"><i class="fa fa-undo"></i> Cancel</a>
+                        </div>
+                    </div>
+                </div>
+                </form>
+            </div>            
+        </div>
+        
+    </div>
+
+<% include ../partials/footer.ejs %>

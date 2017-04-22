@@ -1,0 +1,31 @@
+<% include ../partials/header.ejs %>
+
+    <!-- MAIN CONTENT -->
+    
+      <div class="container">
+        <div class="col-md-offset-3 col-md-6">
+          <h3>Player List </h3>
+         
+          <br>
+          <table class="table table-bordered">
+
+            <!-- Template Row -->
+          <% for (let count = 0; count < players.length; count++) { %>
+            
+            <% if(players[count].tid==pid){ %>
+              <tr class="text-center"><%= players[count].pname1 %></tr><br>
+             <tr class="text-center"><%= players[count].pname2 %></tr><br>
+              <tr class="text-center"><%= players[count].pname3 %></tr><br>
+              <tr class="text-center"><%= players[count].pname4 %></tr><br>
+          <tr class="text-center"><%= players[count].pname5 %></tr><br>
+            <tr class="text-center"><%= players[count].pname6 %></tr><br>
+            <tr class="text-center"><%= players[count].pname7 %></tr><br>
+            <tr class="text-center"><%= players[count].pname8 %></tr><br>
+            <% }} %>
+          </table>
+        </div>
+      </div>
+    
+
+<% include ../partials/footer.ejs %>
+    

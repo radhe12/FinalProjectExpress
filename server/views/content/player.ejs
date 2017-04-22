@@ -1,0 +1,148 @@
+<% include ../partials/header.ejs %>
+
+    <!-- MAIN CONTENT -->
+ <!--   <div class="container">
+      <div class="row">
+        <div class="container-fluid bg-1 text-center">
+          <h1><%= title %></h1>
+            <form class="form" method="post">
+              <div class="form-group">
+                <label for="NameTextField">Name</label>
+                <input type="text" class="form-control" id="NameTextField"
+                placeholder="Player 1" name="pname1" >
+              </div>
+
+                <div class="form-group">
+                <label for="NameTextField">Name</label>
+                <input type="text" class="form-control" id="NameTextField"
+                placeholder="Player 2" name="pname2" >
+              </div>
+
+                <div class="form-group">
+                <label for="NameTextField">Name</label>
+                <input type="text" class="form-control" id="NameTextField"
+                placeholder="Player 3" name="pname3" >
+              </div>
+
+                <div class="form-group">
+                <label for="NameTextField">Name</label>
+                <input type="text" class="form-control" id="NameTextField"
+                placeholder="Player 4" name="pname4" >
+              </div>
+
+                <div class="form-group">
+                <label for="NameTextField">Name</label>
+                <input type="text" class="form-control" id="NameTextField"
+                placeholder="Player 5" name="pname5" >
+              </div>
+
+                <div class="form-group">
+                <label for="NameTextField">Name</label>
+                <input type="text" class="form-control" id="NameTextField"
+                placeholder="Player 6" name="pname6" >
+              </div>
+
+                <div class="form-group">
+                <label for="NameTextField">Name</label>
+                <input type="text" class="form-control" id="NameTextField"
+                placeholder="Player 7" name="pname7" >
+              </div>
+
+                <div class="form-group">
+                <label for="NameTextField">Name</label>
+                <input type="text" class="form-control" id="NameTextField"
+                placeholder="Player 8" name="pname8" >
+              </div>
+
+                <div class="form-group">
+                <label for="tournamentnameTextField">Tournament ID</label>
+                <input type="text" class="form-control" id="tournamentTextField"
+                placeholder="tournament id" name="tid" value="<%= tournaments.id %>"  required>
+              </div>
+            
+
+              <button type="submit" class="btn btn-primary"><i class="fa fa-check-square-o"></i> Submit</button>
+              <a href="/rounds/<%= tournaments.id %>" class="btn btn-warning"><i class="fa fa-undo"></i> Cancel</a>
+            </form>
+        </div>
+      </div>
+    </div>
+-->
+	<div class="row" style="left-margin:50">
+        <div class="col-sm-12">
+            <h1 style="color:white;margin:0 auto;"><%= title %></h1>
+        </div>
+        <!-- panel preview -->
+        <div class="col-sm-5">
+            
+            <form class="form" method="post">
+            <div class="panel panel-default">
+                <div class="panel-body form-horizontal payment-form" >
+                    <div class="form-group">
+                        <label for="concept" class="col-sm-3 control-label">Name</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="NameTextField" name="pname1" required>
+                        </div>
+                    </div>
+                                      <div class="form-group">
+                        <label for="concept" class="col-sm-3 control-label">Name</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="NameTextField" name="pname2" required>
+                        </div>
+                    </div>  
+                                              <div class="form-group">
+                        <label for="concept" class="col-sm-3 control-label">Name</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="NameTextField" name="pname3" required>
+                        </div>
+                    </div> 
+                                        <div class="form-group">
+                        <label for="concept" class="col-sm-3 control-label">Name</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="NameTextField" name="pname4" required>
+                        </div>
+                    </div>
+                                        <div class="form-group">
+                        <label for="concept" class="col-sm-3 control-label">Name</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="NameTextField" name="pname5" required>
+                        </div>
+                    </div>
+                                        <div class="form-group">
+                        <label for="concept" class="col-sm-3 control-label">Name</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="NameTextField" name="pname6" required>
+                        </div>
+                    </div>
+                                        <div class="form-group">
+                        <label for="concept" class="col-sm-3 control-label">Name</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="NameTextField" name="pname7" required>
+                        </div>
+                    </div>
+                                        <div class="form-group">
+                        <label for="concept" class="col-sm-3 control-label">Name</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="NameTextField" name="pname8" required>
+                        </div>
+                    </div>
+                                    <div class="form-group">
+                
+                <input type="hidden" class="form-control" id="tournamentTextField"
+                placeholder="tournament id" name="tid" value="<%= tournaments.id %>"  required>
+              </div>
+                    <div class="form-group">
+                        <div class="col-sm-12 text-right">
+
+              <button type="submit" class="btn btn-primary"><i class="fa fa-check-square-o"></i> Submit</button>
+              <a href="/rounds/<%= tournaments.id %>" class="btn btn-warning"><i class="fa fa-undo"></i> Cancel</a>
+                        </div>
+                    </div>
+                </div>
+                </form>
+            </div>            
+        </div>
+        
+    </div>
+
+<% include ../partials/footer.ejs %>
