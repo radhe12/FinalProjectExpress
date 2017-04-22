@@ -29,10 +29,20 @@ router.get('/', (req, res, next) => {
 
 /* GET contact page. */
 router.get('/contact', (req, res, next) => {
-  res.render('content/contact', {
-    title: 'Active Tournament',
-    displayName: req.user ? req.user.displayName : ''
-   });
+  
+  tournament.find( (err, tournaments) => {
+    if (err) {
+      return console.error(err);
+    }
+    else {
+      res.render('content/contact', {
+        title: 'Active Tournaments',
+        tournaments: tournaments,
+        displayName: req.user ? req.user.displayName : ''
+      });
+    }
+  });
+
 });
 
 // GET /login - render the login view
